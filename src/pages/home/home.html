@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Cinema Djigo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+
+  <ion-list-header>Film List</ion-list-header>
+
+
+
+  <ion-item *ngFor="let film of cartelera.films" class="film">
+
+    <ion-avatar item-left> <img src="../../assets/imgs/{{film.imageSRC}}"> </ion-avatar>
+    
+
+    <h3 class="tit-pelicula">{{film.title}}</h3>
+
+    <p>{{film.description}}</p>
+
+    <button ion-button item-right color ="buttons" (click) = "showInfo(film)">
+      <ion-icon name="md-help"></ion-icon>
+    </button>
+  </ion-item>
+
+
+</ion-content>

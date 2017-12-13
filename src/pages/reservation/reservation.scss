@@ -1,0 +1,48 @@
+page-reservation {
+
+}
+
+.reservationBg{    
+    background-image: url("../../assets/imgs/bgpop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    }
+
+.prices{display: inline}
+
+.date-input{
+   
+}
+
+h1{
+
+color: rgb(253, 251, 219);
+border: 2px solid;
+text-align: center;
+background-color: rgba(255, 37, 37, 0.61);
+padding: 0.4em;
+
+
+}
+
+ion-datetime{
+    border: 0px solid;
+    border-radius: 4px;
+    border-color: rgb(34, 34, 34);
+    margin-top: 0.5em;
+    background-color:  rgb(177, 16, 16);
+    color: white;
+    margin-bottom: 0.5em;
+    text-align: center;
+    width: 80%;
+}
+
+p{text-align: center;}
+
+
+

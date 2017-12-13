@@ -1,0 +1,36 @@
+page-film-info {
+
+}
+
+ion-content{
+    background-image: url("../../assets/imgs/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    
+    
+}
+
+p{
+    font-size: 10em;
+}
+#reserve{
+    background-color: #cc4d4d
+}
+
+#whatsapp{
+
+    background-color: #25d366;
+    
+}
+#twitter{
+    background-color: #00aced;
+    
+}
+#facebook{
+    background-color: #3b5998;
+}

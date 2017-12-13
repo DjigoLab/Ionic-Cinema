@@ -1,0 +1,97 @@
+<!--
+  Generated template for the ReservationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{film.title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="reservationBg">
+
+  <h1> Choose your sesion </h1>
+  <div class="bg-reserv">
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime class="date-input" displayFormat="DD/MM/YYYY">Date</ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <h3>Morning</h3>
+      <button ion-button color="primary">11:30</button>
+      <button ion-button color="primary">13:30</button>
+
+    </ion-item>
+
+    <ion-item>
+      <h3>Evening</h3>
+      <button ion-button color="primary">16:00</button>
+      <button ion-button color="primary">18:00</button>
+      <button ion-button color="primary">20:00</button>
+
+    </ion-item>
+
+    <ion-item>
+      <h3>Night</h3>
+      <button ion-button color="primary">22:30</button>
+      <button ion-button color="primary">00:30</button>
+
+    </ion-item>
+
+    <ion-item>
+
+      <ion-grid >
+        <ion-row justify-content-center align-items-center style="height: 100%">
+          <ion-col>
+            <h4> Normal - 7,90€</h4>
+          </ion-col>
+          <ion-col>
+            <p> 0 </p>
+          </ion-col>
+          <ion-col>
+            <button ion-button small>
+              <ion-icon name="md-add"></ion-icon>
+            </button>
+            <button ion-button small>
+              <ion-icon name="md-remove"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row >
+        <ion-row justify-content-center align-items-center style="height: 100%">
+          <ion-col>
+            <h4> Child - 5,00€</h4>
+          </ion-col>
+          <ion-col>
+            <p> 0 </p>
+          </ion-col>
+          <ion-col>
+            <button ion-button small>
+              <ion-icon name="md-add"></ion-icon>
+            </button>
+            <button ion-button small>
+              <ion-icon name="md-remove"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox></ion-checkbox>
+      <ion-label> Popcorn</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox></ion-checkbox>
+      <ion-label> Drink</ion-label>
+    </ion-item>
+  </div>
+
+  <ion-item><button ion-button full large> BUY</button></ion-item>
+</ion-content>

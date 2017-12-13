@@ -1,0 +1,59 @@
+<!--
+  Generated template for the FilmInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{film.title}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+    <ion-card>
+        <img src="../../assets/imgs/{{film.imageSRC}}"/>
+        <ion-card-content>
+         <button  id="reserve"  ion-button color ="buttons" full round  (click)="makeReservation()">Reservar</button>
+         <ion-item>
+          <p>
+           {{film.description}}
+          </p>
+        </ion-item>
+        <ion-item>
+          <div text-center>
+            <button id="twitter" ion-button ><ion-icon name="logo-twitter"></ion-icon></button>
+            <button id="facebook" ion-button ><ion-icon name="logo-facebook"></ion-icon></button>
+            <button id= "whatsapp" ion-button color ="#222" ><ion-icon name="logo-whatsapp"></ion-icon></button>
+          </div>
+        </ion-item>
+        </ion-card-content>
+      </ion-card>
+<!--
+
+  Old design
+
+  <ion-item text-center><h1>{{film.title}}</h1></ion-item>
+  <ion-item >
+    <img src="../../assets/imgs/{{film.imageSRC}}">
+  </ion-item>
+
+  <ion-item>
+    <p>{{film.description}}</p>
+  </ion-item>
+
+  <ion-item>
+    <h1>+0</h1>
+    <button ion-button color ="secondary" large ="true" item-right><ion-icon name="md-happy"></ion-icon></button>
+    <button ion-button color ="danger" large ="true" item-right><ion-icon name="md-sad"></ion-icon></button>
+    
+  </ion-item>
+-->
+
+</ion-content>
