@@ -20,7 +20,7 @@
     <ion-card>
         <img src="../../assets/imgs/{{film.imageSRC}}"/>
         <ion-card-content>
-         <button  id="reserve"  ion-button color ="buttons" full round  (click)="makeReservation()">Reservar</button>
+         <button  id="reserve"  ion-button color ="buttons" full round  (click)="showInfo(film)">Reservar</button>
          <ion-item>
           <p>
            {{film.description}}

@@ -1,7 +1,7 @@
+import { Films } from './../../app/films';
 import { ReservationPage } from './../reservation/reservation';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Films } from '../../app/films';
 
 /**
  * Generated class for the FilmInfoPage page.
@@ -29,7 +29,8 @@ export class FilmInfoPage {
   }
 
 
-  makeReservation(film){
+  
+  showInfo(Films){
     
         //Cambiar vista (PUSH)
         this.navCtrl.push(ReservationPage,{film:Films});

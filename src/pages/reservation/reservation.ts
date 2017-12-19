@@ -21,9 +21,12 @@ export class ReservationPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
     this.film = this.navParams.get("film");
+    
 
   }
 
+
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReservationPage');
