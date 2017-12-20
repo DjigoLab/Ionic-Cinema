@@ -1,4 +1,3 @@
-import { Films } from './../../app/films';
 import { FilmInfoPage } from './../film-info/film-info';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
