@@ -19,79 +19,66 @@
   <div class="bg-reserv">
     <ion-item>
       <ion-label>Date</ion-label>
-      <ion-datetime class="date-input" displayFormat="DD/MM/YYYY" max="2018"></ion-datetime>
+      <ion-datetime class="date-input" displayFormat="DD/MM/YYYY" max="2018" min="2017" ></ion-datetime>
     </ion-item>
 
     <ion-item>
       <h3>Morning</h3>
-      <button ion-button color="primary">11:30</button>
-      <button ion-button color="primary">13:30</button>
+      <button ion-button [color]="buttonColour(11)"  (click)="selectHour(11)">11:30</button>
+      <button ion-button [color]="buttonColour(13)" (click)="selectHour(13)">13:30</button>
 
     </ion-item>
 
     <ion-item>
       <h3>Evening</h3>
-      <button ion-button color="primary">16:00</button>
-      <button ion-button color="primary">18:00</button>
-      <button ion-button color="primary">20:00</button>
+      <button ion-button [color]="buttonColour(16)" (click)="selectHour(16)">16:00</button>
+      <button ion-button [color]="buttonColour(18)"(click)="selectHour(18)">18:00</button>
+      <button ion-button  (click)="selectHour(20)" [color]="buttonColour(20)" >20:00</button>
 
     </ion-item>
 
     <ion-item>
       <h3>Night</h3>
-      <button ion-button color="primary">22:30</button>
-      <button ion-button color="primary">00:30</button>
+      <button ion-button [color]="buttonColour(22)"(click)="selectHour(22)">22:30</button>
+      <button ion-button [color]="buttonColour(24)"(click)="selectHour(24)">00:30</button>
 
     </ion-item>
 
-    <ion-item>
-
-      <ion-grid >
-        <ion-row justify-content-center align-items-center style="height: 100%">
-          <ion-col>
-            <h4> Normal - 7,90€</h4>
-          </ion-col>
-          <ion-col>
-            <p > 0 </p>
-          </ion-col>
-          <ion-col>
-            <button ion-button small >
-              <ion-icon name="md-add"></ion-icon>
-            </button>
-            <button ion-button small >
-              <ion-icon name="md-remove"></ion-icon>
-            </button>
-          </ion-col>
-        </ion-row >
-        <ion-row justify-content-center align-items-center style="height: 100%">
-          <ion-col>
-            <h4> Child - 5,00€</h4>
-          </ion-col>
-          <ion-col>
-            <p > 0 </p>
-          </ion-col>
-          <ion-col>
-            <button ion-button small >
-              <ion-icon name="md-add"></ion-icon>
-            </button>
-            <button ion-button small >
-              <ion-icon name="md-remove"></ion-icon>
-            </button>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+    <ion-item *ngIf="haveSesion" >
+     <ion-label>Adults  7,90€/e</ion-label>
+      <ion-select interface = "popover" placeholder="0">
+       <ion-option>0</ion-option>
+       <ion-option>1</ion-option>
+       <ion-option>2</ion-option>
+       <ion-option>3</ion-option>
+       <ion-option>4</ion-option>
+       <ion-option>5</ion-option>
+      </ion-select> 
 
     </ion-item>
 
-    <ion-item>
+
+    <ion-item *ngIf="haveSesion">
+      <ion-label> Childs  5,20€ /e</ion-label>
+       <ion-select interface = "popover" placeholder="0">
+        <ion-option>0</ion-option>
+        <ion-option>1</ion-option>
+        <ion-option>2</ion-option>
+        <ion-option>3</ion-option>
+        <ion-option>4</ion-option>
+        <ion-option>5</ion-option>
+       </ion-select> 
+ 
+     </ion-item>
+    <ion-item  *ngIf="haveSesion">
       <ion-checkbox></ion-checkbox>
       <ion-label> Popcorn</ion-label>
     </ion-item>
-    <ion-item>
+    <ion-item  *ngIf="haveSesion">
       <ion-checkbox></ion-checkbox>
       <ion-label> Drink</ion-label>
     </ion-item>
   </div>
 
-  <ion-item><button ion-button full large> BUY</button></ion-item>
+  <ion-item><button  ion-button full large (click)="presentPrompt(film)"> BUY</button></ion-item>
 </ion-content>

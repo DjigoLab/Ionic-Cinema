@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { FilmInfoPage } from './../pages/film-info/film-info';
 import { ReservationPage } from '../pages/reservation/reservation';
+import { ResumencompraPage } from '../pages/resumencompra/resumencompra';
 //Añadir paginas aquí
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ReservationPage } from '../pages/reservation/reservation';
     MyApp,
     HomePage,
     FilmInfoPage,
-    ReservationPage
+    ReservationPage,
+    ResumencompraPage
     //Añadir paginas aquí
   ],
   imports: [
@@ -27,7 +29,8 @@ import { ReservationPage } from '../pages/reservation/reservation';
     MyApp,
     HomePage,
     FilmInfoPage,
-    ReservationPage
+    ReservationPage,
+    ResumencompraPage
     //Añadir paginas aquí
   ],
   providers: [
